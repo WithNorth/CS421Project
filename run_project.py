@@ -50,7 +50,7 @@ def main():
         print(f"essay evaluation (di): {di}")
         print(f"Essay Coherence (dii): {dii} ")
         final_score = 2*a - b + ci + cii + 2*ciii + 3*di + dii
-        if final_score <= 3.76:
+        if final_score <= 37.157:
             final_grade = "low"
         else:
             final_grade = "high"

@@ -47,8 +47,8 @@ def read_text_files(folder_path):
             final_score = 2*a - b + ci + cii + 2*ciii + 3*di + dii
 
             grade = df[df["filename"] == essay_filename]['grade'].iloc[0]
-            result = pd.DataFrame([{'filename': essay_filename, 'score': ciii,'grade':grade}])
-            result.to_csv('final_scores_spac.csv', mode='a',  index=False)
+            result = pd.DataFrame([{'filename': essay_filename, 'score': final_score,'grade':grade}])
+            result.to_csv('final_scores_spacy_version.csv', mode='a',  index=False)
 
 folder_path = 'essays_dataset\essays'
 read_text_files(folder_path)
